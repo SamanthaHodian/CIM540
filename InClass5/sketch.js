@@ -18,8 +18,8 @@ function draw() {
     background(0);
    for (var i = 0; i <250; i++){
   ellipse (x[i], y[i], random(2,5),random(2,5));
- var eX = (mouseX - x[i]) * easing;
-	var eY = (mouseY - y[i]) * easing;
+var eX = (mouseX - x[i]) * easing;
+var eY = (mouseY - y[i]) * easing;
 
 	x[i] = x[i] + eX;
 	y[i] = y[i] + eY;
