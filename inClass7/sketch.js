@@ -24,6 +24,7 @@ function setup() {
 function draw() {
   background (0);
   fill (random(0,255), random(0,255), random(255));
+  ellipse(mouseX, mouseY, 10, 10);
   for (var i = 0; i < p.length; i++){
     p[i].show();
     p[i].move();
@@ -40,5 +41,5 @@ function mousePressed(){
 }
 
 function keyPressed () {
-  p[i].fall();
+  p.push(new Particle (mouseX, mouseY));
 }
