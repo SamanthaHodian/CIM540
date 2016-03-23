@@ -23,6 +23,7 @@ function setup() {
 
 function draw() {
   background (0);
+  noStroke();
   fill (random(0,255), random(0,255), random(255));
   ellipse(mouseX, mouseY, 10, 10);
   for (var i = 0; i < p.length; i++){
